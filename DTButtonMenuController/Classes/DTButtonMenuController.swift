@@ -134,7 +134,7 @@ open class DTButtonMenuController: UIViewController {
         }
     }
     
-    func viewTapped(_ gestureRecognizer: UIGestureRecognizer) {
+    @objc func viewTapped(_ gestureRecognizer: UIGestureRecognizer) {
         if shouldDismissOnAction {
             dismiss(animated: true, completion: nil)
         }

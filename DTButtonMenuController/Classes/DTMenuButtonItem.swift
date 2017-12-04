@@ -25,7 +25,7 @@ public final class DTMenuButton: NSObject {
     /// Final position of item when displaying on menu controller. Public get only.
     var position: CGPoint = CGPoint.zero
     
-    func buttonTapped(_ button: UIButton) {
+    @objc func buttonTapped(_ button: UIButton) {
         completionHandlerBlock?(self)
     }
 }
